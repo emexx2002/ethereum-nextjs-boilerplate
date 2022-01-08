@@ -38,26 +38,10 @@ function MenuItems() {
 					<a>💵 Fiat</a>
 				</Link>
 			</Menu.Item>
-			<Menu.Item key='/erc20balance'>
-				<Link href='/erc20balance'>
-					<a>💰 Balances</a>
-				</Link>
-			</Menu.Item>
-			<Menu.Item key='/erc20transfers'>
-				<Link href='/erc20transfers'>
-					<a>💸 Transfers</a>
-				</Link>
-			</Menu.Item>
-			<Menu.Item key='/nftBalance'>
-				<Link href='/nftBalance'>
-					<a>🖼 NFTs</a>
-				</Link>
-			</Menu.Item>
-			<Menu.Item key='/contract'>
-				<Link href='/contract'>
-					<a>📄 Contract</a>
-				</Link>
-			</Menu.Item>
+			
+			
+			
+			
 		</Menu>
 	);
 }
