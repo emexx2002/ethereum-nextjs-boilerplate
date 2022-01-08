@@ -1,5 +1,5 @@
 import { Card, Timeline, Typography, } from "antd";
-import React, { useMemo } from "react";
+import React, { useMemo, useState } from "react";
 import { useMoralis } from "react-moralis";
 import { Contract_Address, ABI } from "./config"
 import Web3 from 'web3';
@@ -29,6 +29,7 @@ export default function QuickStart({ isServerInfo }) {
   const { Moralis } = useMoralis();
 
   const { authenticate, isAuthenticated, user, logout } = useMoralis();
+  const [address , setAddress]
 
   const web3 = new Web3(Web3.givenProvider || "http://localhost:8545")
   const account = web3.eth.getAccounts()
@@ -75,7 +76,7 @@ export default function QuickStart({ isServerInfo }) {
         }
       >
         <button onClick={depositEther} style={{ paddingLeft: "20px", paddingRight: "20px", borderRadius: "18px", border: "none", color: "white", backgroundColor: "black" }}>Join With 1Eth</button>
-        <h3>{user.get("ethAddress")}</h3>
+        {  isAuthenticated ? ( <h3>{from: user.get("ethAddress")}</h3>) : ( <h3>Authenticate first</h3>)}  
       </Card>
 
     </div>
