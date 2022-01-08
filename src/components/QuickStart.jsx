@@ -1,4 +1,4 @@
-import { Card, Timeline, Typography, Button } from "antd";
+import { Card, Timeline, Typography, } from "antd";
 import React, { useMemo } from "react";
 import { useMoralis } from "react-moralis";
 import { Contract_Address, ABI } from "./config"
