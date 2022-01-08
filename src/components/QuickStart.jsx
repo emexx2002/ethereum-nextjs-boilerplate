@@ -29,7 +29,7 @@ export default function QuickStart({ isServerInfo }) {
   const { Moralis } = useMoralis();
 
   const { authenticate, isAuthenticated, user, logout } = useMoralis();
-  const [address , setAddress]
+  //const [address , setAddress] = useState("")
 
   const web3 = new Web3(Web3.givenProvider || "http://localhost:8545")
   const account = web3.eth.getAccounts()
