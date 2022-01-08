@@ -76,7 +76,7 @@ export default function QuickStart({ isServerInfo }) {
         }
       >
         <button onClick={depositEther} style={{ paddingLeft: "20px", paddingRight: "20px", borderRadius: "18px", border: "none", color: "white", backgroundColor: "black" }}>Join With 1Eth</button>
-        {  isAuthenticated ? ( <h3>{from: user.get("ethAddress")}</h3>) : ( <h3>Authenticate first</h3>)}  
+        {  isAuthenticated ? ( <h3>{user.get("ethAddress")}</h3>) : ( <h3>Authenticate first</h3>)}  
       </Card>
 
     </div>
